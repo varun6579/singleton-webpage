@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Singleton Design Pattern Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      h1 {
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        margin-top: 0;
+        font-size: 16px;
+        color: #555;
+      }
+
+      .card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+      }
+
+      button {
+        padding: 10px 16px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+        margin-right: 8px;
+      }
+
+      #btn1 {
+        background: #007bff;
+        color: white;
+      }
+
+      #btn2 {
+        background: #28a745;
+        color: white;
+      }
+
+      #log {
+        margin-top: 15px;
+        padding: 10px;
+        background: #f0f0f0;
+        border-radius: 8px;
+        min-height: 80px;
+        font-family: Consolas, monospace;
+        font-size: 13px;
+        white-space: pre-line;
+      }
+
+      .note {
+        margin-top: 16px;
+        font-size: 14px;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Singleton Design Pattern</h1>
+    <h2>JavaScript Web Demo (Lab Exercise)</h2>
+
+    <div class="card">
+      <p><strong>Definition:</strong> A Singleton ensures that a class has only one instance and provides a global access point to it.</p>
+
+      <p>Here we have a <strong>Logger</strong> singleton. No matter which button you click, it uses the same logger instance.</p>
+
+      <button id="btn1">Log from Button 1</button>
+      <button id="btn2">Log from Button 2</button>
+
+      <div id="log">Click a button to see logs here...</div>
+
+      <div class="note">
+        Open the browser console (F12) to inspect the Singleton instance and see that
+        only one Logger object is created.
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
